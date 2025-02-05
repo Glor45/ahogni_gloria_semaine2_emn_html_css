@@ -1,6 +1,196 @@
-form{
-    font-family: Arial, Helvetica, sans-serif;
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-img{
-    width: 300px;height:200px ;
+
+/* --- STYLE GÉNÉRAL --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Or any hover color */
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* --- MAIN --- */
+main {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section#intro p {
+    margin-bottom: 1.5rem;
+}
+
+section#Articles img {
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h2 a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- CONTACT --- */
+#Contact address {
+    margin-top: 1.5rem;
+}
+
+#Contact address p a {
+    display: block;
+    color: #333;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+#Contact address p a:hover {
+    color: #007BFF;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- MEDIA QUERIES (Responsive) --- */
+@media (max-width: 768px) {
+    header .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        max-width: 80%;
+        position: static;
+        margin-top: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    section#Articles img {
+        max-width: 90%;
+    }
 }
