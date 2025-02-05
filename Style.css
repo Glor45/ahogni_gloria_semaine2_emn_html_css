@@ -147,7 +147,7 @@ footer a:hover {
 }
 
 /* --- MEDIA QUERIES (Responsive) --- */
-@media (max-width: 768px) {
+ (max-width: 768px) {
     header .header {
         flex-direction: column;
         text-align: center;
@@ -176,7 +176,70 @@ footer a:hover {
         font-size: 1.6rem;
     }
 }
+#années {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
 
+/* Titre de la section */
+#années h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+/* Style du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+/* Style des cellules du tableau */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Style des en-têtes */
+th {
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+}
+
+/* Style des lignes impaires */
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Style au survol des lignes */
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Responsive Design pour le tableau */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;''
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.4rem;
@@ -192,5 +255,186 @@ footer a:hover {
 
     section#Articles img {
         max-width: 90%;
+    }
+}
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Section */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+header img {
+    margin-top: 20px;
+    border-radius: 50%;
+    max-width: 40%;
+    height: auto;
+}
+
+/* Main Content Section */
+main {
+    padding: 20px;
+}
+
+/* Introduction Section */
+#intro {
+    margin-bottom: 40px;
+}
+
+/* Articles Section */
+#Articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+#Articles h2 {
+    font-size: 24px;
+    color: #007BFF;
+}
+
+#Articles img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#Contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Contact address {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#Contact a {
+    color: #007BFF;
+}
+
+#Contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header.container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        max-width: 60%;
+    }
+
+    #Articles {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        max-width: 80%;
+    }
+
+    #Articles {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        font-size: 12px;
     }
 }
